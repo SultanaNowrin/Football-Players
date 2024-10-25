@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Players</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #ffd900;">World Most Valuable Players</h1>
+        <p style="font-size: 13px;">These are the most demanded football players in the world. Their values are much higher. If you want to hier them, you have to pay big amount money for them.</p>
+        <div class="header-image">
+            <img src="./Images/neymar.png" alt="Neymar">
+        </div>
+    </header>
+   <div class="container">
+     <section class="players">
+        <div class="player-card">
+            <img src="./Images/messi.jpg" alt="Lionel Messi">
+            <h3>Lionel Messi</h3>
+            <p>34 Goals, 10 Assists</p>
+            <button>Select</button>
+        </div>
+        <div class="player-card">
+            <img src="./Images/andres.jpg" alt="Andres Iniesta">
+            <h3>Andres Iniesta</h3>
+            <p>20 Goals, 15 Assists</p>
+            <button>Select</button>
+        </div>
+        <div class="player-card">
+            <img src="./Images/mbpappe.jpeg" alt="Mbappe">
+            <h3>Mbpappe</h3>
+            <p>36 Goals, 10 Assists</p>
+            <button>Select</button>
+        </div>
+        <div class="player-card">
+            <img src="./Images/mene.jpg" alt="Mbappe">
+            <h3>Sadio Mene</h3>
+            <p>36 Goals, 120 Assists</p>
+            <button>Select</button>
+        </div>
+        <div class="player-card">
+            <img src="./Images/eden.jpg" alt="Mbappe">
+            <h3>Eden Hazard</h3>
+            <p>36 Goals, 120 Assists</p>
+            <button>Select</button>
+        </div>
+        <div class="player-card">
+            <img src="./Images/pogba.jpg" alt="Mbappe">
+            <h3>Paul Pogba</h3>
+            <p>36 Goals, 10 Assists</p>
+            <button>Select</button>
+        </div>
+        
+     </section>
+      <div class="right-column">
+         <aside class="selected-players" style="    color: white;
+                   background-color: black;">
+            <h2 style="padding: 10px; border: 1px solid #ccc;   border-radius: 5px; text-align: center;">Selected-V</h3>
+            <br>
+          <ul id="selected-list">
+            <li>1. Mbpappe</li>
+            <li>2. Andres</li>
+            <li>3. Messi</li>
+            <li>4. Pogba</li>
+            <li>5. Eden</li>
+            <li>6. Mene</li>
+            <li>7. Neymar</li>
+          </ul>
+         </aside>
+
+         <section class="budget-calculator">
+             <h2 style="padding: 10px; border: 1px solid #ccc;   border-radius: 5px; text-align: center;">Player Budget</h3>
+             <br>
+          <form>
+            <label for="perPlayers">Per  Players</label>
+            <input type="number" id="PerPlayers" name="perPlayers" placeholder="player cost">
+            <br>
+            <button type="button" onclick="calculateBudget()" style="background-color: skyblue;">Calculate</button>
+            <br>
+            <div style=" display: flex; justify-content: space-between; ">
+              <label for="playerExpense">Player Expense:</label>
+              <p>$<span id="">00</span></p>
+            </div>
+            <br>
+            <label for="manager">Manager</label>
+            <input type="number" id="manager" name="manager" placeholder="manager  cost">
+             <br>
+            <label for="coach">Coach</label>
+            <input type="number" id="coach" name="coach" placeholder="coach  cost">
+             <br>
+            <button type="button" onclick="calculateBudget()" style="background-color: skyblue;">Calculate Total</button>
+            <br>
+            <p style="display: flex; justify-content: space-between; ">Total:<span id="totalBudget">$00</span></p>
+          </form>
+         </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2022 All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
